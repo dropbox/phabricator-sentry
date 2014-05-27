@@ -12,4 +12,8 @@ class SentryLoggerRegistration extends PhabricatorAutoEventListener {
     SentryLogger::setClient($client);
     PhutilErrorHandler::setErrorListener(array('SentryLogger', 'handleErrors'));
   }
+
+  // must be stubbed due to parent class
+  public function handleEvent(PhutilEvent $event) {
+  }
 }

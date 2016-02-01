@@ -8,6 +8,8 @@ class SentryLoggerRegistration extends PhabricatorAutoEventListener {
       return;
     }
 
+    // Make sure `raven-php/lib` is in your `include_path`.
+    require_once 'Raven/Autoloader.php';
     Raven_Autoloader::register();
 
     // Configure the client

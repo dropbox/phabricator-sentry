@@ -8,8 +8,10 @@ Setup
 -----
 
 1. Drop the code into phabricator/src/extensions/
-2. Configure Sentry via http://phabricator.example.com/config/group/sentryconfigoptions/
-3. Enjoy errors being reported to Sentry.
+2. Install the `raven-php <https://github.com/getsentry/raven-php>`_ library somewhere on your machine.
+3. Ensure that ``path/to/raven-php/lib`` is in your PHP ``include_path``.
+4. Configure Sentry via http://phabricator.example.com/config/group/sentryconfigoptions/
+5. Enjoy errors being reported to Sentry.
 
 Contributing
 ------------
